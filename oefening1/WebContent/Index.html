@@ -12,7 +12,6 @@
 <body>
 	<div class="container">
 		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
 				<div class="navbar-header">
 					
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
@@ -23,13 +22,85 @@
 				</div>
 				<div class="collapse navbar-collapse" id="mynavbar-content">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Terugblik</a></li>
-							<li><a href="#">Commentaar</a></li>
+							<li class="active"><a href="Index.html">Home</a></li>
+							<li><a href="Terugblik.html">Terugblik</a></li>
+							<li><a href="Commentaar.html">Commentaar</a></li>
 						</ul>
-					</div>
-			</div>		
+					</div>	
 		</div>
 	</div>
+	<div class="container">
+		<div class="col-md-6">
+			<h4>Rainbow Six Siege</h4>
+		</div>
+		<div class="col-md-6">
+			<h4>Destiny</h4>
+		</div>
+	</div>
+	<div class="container-fluid">
+			<div id="bestCarsCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#bestCarsCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#bestCarsCarousel" data-slide-to="1"></li>
+					<li data-target="#bestCarsCarousel" data-slide-to="2"></li>
+			   </ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/rb6.jpg">
+							<div class="carousel-caption">
+								<h3>Rainbow Six Siege</h3>
+								<p>Gusco Kaai</p>
+							</div>
+					</div>
+					<div class="item">
+						<img src="img/destiny.jpg">
+							<div class="carousel-caption">
+								<h3>Destiny</h3>
+								<p></p>
+							</div>
+					</div>
+					<div class="item">
+						<img src="img/school3.jpg">
+							<div class="carousel-caption">
+								<h3></h3>
+								<p></p>
+							</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#bestCarsCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#bestCarsCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+		<script   src="https://code.jquery.com/jquery-1.11.0.js"   integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="   crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.collapse').collapse({
+					toggle: false
+				});
+				
+				$('.collapse').on('show.bs.collapse', function () {
+					console.log('Opening tab..');
+				});
+
+				$('.collapse').on('shown.bs.collapse', function () {
+					console.log('Tab opened.');
+					});
+
+				$('.collapse').on('hide.bs.collapse', function () {
+					console.log('Hiding tab..');
+				});
+
+				$('.collapse').on('hidden.bs.collapse', function () {
+					console.log('Tab hidden');
+				});
+
+			});
+		</script>
+		
 </body>
 </html>
